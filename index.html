@@ -4,12 +4,51 @@
 <link rel="icon" type="image/x-icon" href="favicon.ico">
 <style>
 .content {
-  max-width: 500px;
+  max-width: 950px;
   margin: auto;
   font-family: arial;
+  margin: auto;
+  text-align: center;
 }
 .heading {
 	font-size: 48px;
+}
+.services {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+}
+.service {
+    width: 300px;
+    height: 250px;
+    background-color:#EEE;
+    padding: 10px;
+    margin: 10px;
+}
+.inner {
+	text-align:left;
+}
+.service .heading {
+	font-size: 28px;
+	padding-bottom: 20px;
+}
+@media (max-width: 940px) {
+  .services {
+    flex-direction: column;
+  }
+  .service {
+  	width: 90%;
+  }
+}
+
+.logo {
+	max-width: 500px;
+	width: 100%;
+}
+
+ul {
+	padding-left: 10px;
 }
 
 </style>
@@ -17,12 +56,48 @@
 <body>
 	<br/>
 <div class="content">
-	<h1 align="center" class="heading">HEUS CONSULTING</h1>
-	<img src="hc-logo-full.svg" />
-	<br/><br/><br/><br/><hr/>
-	<div align="center"><a href="https://www.linkedin.com/in/ryanheusinkveld/">Ryan Heusinkveld</a></div>
+	<h1 class="heading">HEUS CONSULTING</h1>
+	<img class="logo" src="hc-logo.svg" />
+	<br/><br/><br/>
+	<div class="services">
+		<div class="service">
+			<div class="heading">Commerce Strategy</div>
+			<div class="inner">
+				Technology and platform-focused strategy and guidance
+				<ul>
+					<li>Upfront planning</li>
+					<li>Platform selection</li>
+					<li>Partner/SI liaison during implementation</li>
+				</ul>
+		</div>
+		</div>
+		<div class="service">
+			<div class="heading">Enterprise Technology</div>
+			<div class="inner">
+				Architecture, process and governance support across enterprise-level technology needs and decisions
+				<ul>
+					<li>Cloud planning</li>
+					<li>Enterprise archicture defintion and auditing</li>
+					<li>Governance and organization definition</li>
+				</ul>
+		</div>
+		</div>
+		<div class="service">
+			<div class="heading">Fractional CTO/CIO</div>
+			<div class="inner">
+				Supporting small and medium businesses with fractional ongoing leadership or larger organizations with interim needs
+				<ul>
+					<li>Internal technology</li>
+					<li>Technology team/delivery leadership</li>
+					<li>Large-scale project leadership</li>
+				</ul>
+		</div>
+		</div>
+	</div>	
+	<br/><hr/>	
 	<br/>
-	<div align="center">
+	<div align="center">Connect with me on LinkedIn to learn more have a conversation
+	<div align="center"><a href="https://www.linkedin.com/in/ryanheusinkveld/">Ryan Heusinkveld</a></div><br/>
 	<a href="https://www.linkedin.com/in/ryanheusinkveld/">
 		<img width="60" src="LI-In-Bug.png">
 	</a>
